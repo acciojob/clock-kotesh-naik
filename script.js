@@ -1,7 +1,7 @@
 //your JS code here. If required.
 function updateTime(){
 	const timerElement = document.getElementById("timer");
-	const now new Date();
+	const now = new Date();
 	const year = now.getFullYear();
 	const month = String(now.getMonth()+1).padStart(2,"0");
 	const day = String(now.getDate()).padStart(2,"0");
