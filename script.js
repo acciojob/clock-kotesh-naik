@@ -10,7 +10,7 @@ function updateTime(){
 	const ampm = hours >= 12 ? "PM" : "AM";
 	const minutes = String(now.getMinutes()).padStart(2,"0");
 	const seconds = String(now.getSeconds()).padStart(2,"0");
-		const formattedTime = '${month}/${day}/${year},${formattedHours}:${minutes}:${seconds}:${ampm}'
+		const formattedTime = `${month}/${day}/${year}, ${formattedHours}:${minutes}:${seconds}:${ampm}`
 timerElement.textContent = formattedTime;
 }
 updateTime();
